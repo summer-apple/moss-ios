@@ -16,7 +16,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSString *segueId;
+    
+    if ([ud objectForKey:@"isFirstLaunch"]) {//first launch
+        [ud setBool:NO forKey:@"isFirstLaunch"];
+        segueId = @"FirstLunchIdentifier";
+    }else{//not first time launch
+        
+        NSDate *now = [NSDate date];
+        NSDate *expired = [ud objectForKey:@"expired"];
+        
+        NSLog(@"now:%@\nexpired:%@\n",now,expired);
+        
+        if ([now compare:expired] == NSOrderedAscending) {//token can be use
+            segueId = @"MainIdentifier";
+        }else{//token expired,user has to relogin
+            [ud setBool:NO forKey:@"isLogined"];
+            segueId = @"LoginIdentifier";
+        }
+        
+    }
+    
+    self.window.rootViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:segueId];
+    
     return YES;
 }
 
