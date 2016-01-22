@@ -11,10 +11,12 @@
 		C46C3A3D1C50DCDD007313AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C3A3C1C50DCDD007313AA /* main.m */; };
 		C46C3A401C50DCDD007313AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C3A3F1C50DCDD007313AA /* AppDelegate.m */; };
 		C46C3A431C50DCDD007313AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C3A421C50DCDD007313AA /* ViewController.m */; };
-		C46C3A461C50DCDD007313AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46C3A441C50DCDD007313AA /* Main.storyboard */; };
 		C46C3A491C50DCDD007313AA /* Moss.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C46C3A471C50DCDD007313AA /* Moss.xcdatamodeld */; };
 		C46C3A4B1C50DCDD007313AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46C3A4A1C50DCDD007313AA /* Assets.xcassets */; };
 		C46C3A4E1C50DCDD007313AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46C3A4C1C50DCDD007313AA /* LaunchScreen.storyboard */; };
+		C47B2F121C52268F005400CD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47B2F111C52268F005400CD /* LoginViewController.m */; };
+		C47B2F151C524E0E005400CD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47B2F141C524E0E005400CD /* MainViewController.m */; };
+		C47B2F191C529138005400CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47B2F171C529138005400CD /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +27,15 @@
 		C46C3A3F1C50DCDD007313AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C46C3A411C50DCDD007313AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C46C3A421C50DCDD007313AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C46C3A451C50DCDD007313AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C46C3A481C50DCDD007313AA /* Moss.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moss.xcdatamodel; sourceTree = "<group>"; };
 		C46C3A4A1C50DCDD007313AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C46C3A4D1C50DCDD007313AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C46C3A4F1C50DCDD007313AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C47B2F101C52268F005400CD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C47B2F111C52268F005400CD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C47B2F131C524E0E005400CD /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C47B2F141C524E0E005400CD /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C47B2F181C529138005400CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4C1B7C1476136312CF59B8C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E14DD986B40FFDC967DD7DAC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,12 +94,16 @@
 				C46C3A3F1C50DCDD007313AA /* AppDelegate.m */,
 				C46C3A411C50DCDD007313AA /* ViewController.h */,
 				C46C3A421C50DCDD007313AA /* ViewController.m */,
-				C46C3A441C50DCDD007313AA /* Main.storyboard */,
+				C47B2F171C529138005400CD /* Main.storyboard */,
 				C46C3A4A1C50DCDD007313AA /* Assets.xcassets */,
 				C46C3A4C1C50DCDD007313AA /* LaunchScreen.storyboard */,
 				C46C3A4F1C50DCDD007313AA /* Info.plist */,
 				C46C3A471C50DCDD007313AA /* Moss.xcdatamodeld */,
 				C46C3A3B1C50DCDD007313AA /* Supporting Files */,
+				C47B2F101C52268F005400CD /* LoginViewController.h */,
+				C47B2F111C52268F005400CD /* LoginViewController.m */,
+				C47B2F131C524E0E005400CD /* MainViewController.h */,
+				C47B2F141C524E0E005400CD /* MainViewController.m */,
 			);
 			path = Moss;
 			sourceTree = "<group>";
@@ -167,9 +177,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47B2F191C529138005400CD /* Main.storyboard in Resources */,
 				C46C3A4E1C50DCDD007313AA /* LaunchScreen.storyboard in Resources */,
 				C46C3A4B1C50DCDD007313AA /* Assets.xcassets in Resources */,
-				C46C3A461C50DCDD007313AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,29 +239,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				C46C3A431C50DCDD007313AA /* ViewController.m in Sources */,
+				C47B2F151C524E0E005400CD /* MainViewController.m in Sources */,
 				C46C3A401C50DCDD007313AA /* AppDelegate.m in Sources */,
 				C46C3A3D1C50DCDD007313AA /* main.m in Sources */,
 				C46C3A491C50DCDD007313AA /* Moss.xcdatamodeld in Sources */,
+				C47B2F121C52268F005400CD /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C46C3A441C50DCDD007313AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C46C3A451C50DCDD007313AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C46C3A4C1C50DCDD007313AA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C46C3A4D1C50DCDD007313AA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C47B2F171C529138005400CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C47B2F181C529138005400CD /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

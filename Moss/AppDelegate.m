@@ -25,12 +25,19 @@
         segueId = @"FirstLunchIdentifier";
     }else{//not first time launch
         
+      
+        NSString *s = [ud objectForKey:@"expired"];   //1453563307963
+        long long i = [s longLongValue];   //1453563307963
+        NSTimeInterval ti = i/1000;    //1453563307
+        
+        NSDate *expired = [NSDate dateWithTimeIntervalSince1970:ti];
         NSDate *now = [NSDate date];
-        NSDate *expired = [ud objectForKey:@"expired"];
         
-        NSLog(@"now:%@\nexpired:%@\n",now,expired);
+        NSLog(@"%@--%@",now,expired);
         
-        if ([now compare:expired] == NSOrderedAscending) {//token can be use
+        
+        //if ([now compare:expired] == NSOrderedAscending) {//token can be use
+        if(now < expired){
             segueId = @"MainIdentifier";
         }else{//token expired,user has to relogin
             [ud setBool:NO forKey:@"isLogined"];
@@ -38,6 +45,8 @@
         }
         
     }
+    
+    //segueId = @"MainIdentifier";
     
     self.window.rootViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:segueId];
     
